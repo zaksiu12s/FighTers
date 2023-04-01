@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="icon" href="./IMAGES/ICON.svg">
     <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <noscript>Sorry, your website doesn't support JS!</noscript>
 
     <title>FighTers</title>
@@ -17,6 +18,20 @@
 </head>
 
 <body>
+    <div class="login" onmousedown="loginMenu(1, 'login', 'active')">
+        <div class="window" onmousedown="loginMenu(1, 'login', 'active')">
+            <form>
+                TAK
+            </form>
+        </div>
+    </div>
+    <div class="join" onmousedown="loginMenu(1, 'join', 'active')">
+        <div class="window" onmousedown="loginMenu(1, 'join', 'active')">
+            <form>
+                TAK
+            </form>
+        </div>
+    </div>
 
     <nav>
         <div class="left">
@@ -47,8 +62,8 @@
         </div>
 
         <div class="right">
-            <div class="log-in"><a href="#">LOGIN</a></div>
-            <div class="sign-in"><a href="#">JOIN</a></div>
+            <div class="log-in" onclick = "loginMenu(0, 'login', 'active')"><a>LOGIN</a></div>
+            <div class="sign-in" class="join" onmousedown="loginMenu(0, 'join', 'active')"><a>JOIN</a></div>
         </div>
     </nav>
     <div class="nav-dropdown">
@@ -62,9 +77,11 @@
     </div>
 
     <main>
-        <div class="hero"></div>
+        <div class="hero">
+            <h1 class="element-auto-write"></h1>
+            <p class="element-auto-write"></p>
+        </div>
     </main>
-
 </body>
 
 </html>
