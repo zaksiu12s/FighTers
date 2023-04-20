@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./index.css">
-    <link rel="icon" href="./IMAGES/ICON.svg">
-    <script src="./index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="./main/index.css">
+    <link rel="icon" href="./main/IMAGES/ICON.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./main/index.js"></script>
     <noscript>Sorry, your website doesn't support JS!</noscript>
 
     <title>FighTers</title>
@@ -18,21 +18,6 @@
 </head>
 
 <body>
-    <div class="login" onmousedown="loginMenu(1, 'login', 'active')">
-        <div class="window" onmousedown="loginMenu(1, 'login', 'active')">
-            <form>
-                TAK
-            </form>
-        </div>
-    </div>
-    <div class="join" onmousedown="loginMenu(1, 'join', 'active')">
-        <div class="window" onmousedown="loginMenu(1, 'join', 'active')">
-            <form>
-                TAK
-            </form>
-        </div>
-    </div>
-
     <nav>
         <div class="left">
             <a href="#">
@@ -48,7 +33,7 @@
 
         <div class="center">
             <ul>
-                <li><a href="#">HOME</a></li>
+                <li><a href="./GAME/GAME_MAIN.html">PLAY</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">BLOG</a></li>
                 <li><a href="#">FORUM</a></li>
@@ -62,8 +47,8 @@
         </div>
 
         <div class="right">
-            <div class="log-in" onclick = "loginMenu(0, 'login', 'active')"><a>LOGIN</a></div>
-            <div class="sign-in" class="join" onmousedown="loginMenu(0, 'join', 'active')"><a>JOIN</a></div>
+            <div class="log-in"><a href="./FORMS/forms.html">LOGIN</a></div>
+            <div class="sign-in"><a href="./FORMS/forms.html">JOIN</a></div>
         </div>
     </nav>
     <div class="nav-dropdown">
