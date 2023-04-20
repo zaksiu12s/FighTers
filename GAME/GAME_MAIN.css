@@ -1,0 +1,8 @@
+canvas {
+    position: absolute;
+
+    width: 75vw;
+    height: 85vh;
+    top: calc((100vh - 85vh) / 2);
+    left: calc((100vw - 75vw) / 2);
+}
